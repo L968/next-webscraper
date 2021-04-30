@@ -10,20 +10,7 @@ export default function Lineup() {
             const url = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
             const { data } = await axios.get(url + '/api/sinprapar');
 
-            let filteredData = [];
-
-            for (const row of data) {
-                if (row.Tipo === 'TQ'
-                 || row.Manobra.includes('FOSPAR')
-                 || row.Manobra.includes('PFELIX')
-                 || row.Manobra.startsWith('EF')) {
-                    continue;
-                } else {
-                    filteredData.push(row);
-                }
-            }
-
-            setData(filteredData);
+            setData(data);
         }
 
         loadData();
@@ -60,30 +47,12 @@ export default function Lineup() {
                             fontColor = '#000fff';
                         }
 
-                        let x = row.Manobra.split(' ');
-
-                        if (x.length > 2) {
-                            if (x[2].length === 2) {
-                                x.splice(2, 1);
-                            }
-                        }
-
-                        if (x.length > 1) {
-                            let y = x[1].split('/');
-
-                            if (y.length > 1) {
-                                x[1] = y[1];
-                            }
-                        }
-
-                        const manobra = x.join(' ');
-
                         return (
                             <tr key={row.Navio} style={{ backgroundColor: rowColor, color: fontColor }}>
                                 <td className={styles.border}>{row.Data}</td>
                                 <td className={styles.border}>{row.Hora}</td>
                                 <td className={styles.border}>{row.Navio}</td>
-                                <td className={styles.border}>{manobra}</td>
+                                <td className={styles.border}>{row.Manobra}</td>
                                 <td className={styles.border}>{row.Tipo}</td>
                                 <td className={styles.border}>{row.Situação}</td>
                             </tr>
