@@ -68,10 +68,12 @@ export default function Lineup() {
                             }
                         }
 
-                        let y = x[1].split('/');
+                        if (x.length > 1) {
+                            let y = x[1].split('/');
 
-                        if (y.length > 1) {
-                            x[1] = y[1];
+                            if (y.length > 1) {
+                                x[1] = y[1];
+                            }
                         }
 
                         const manobra = x.join(' ');
