@@ -45,6 +45,8 @@ export default function Lineup() {
                         if (row.Manobra.startsWith('AT')
                          || row.Manobra.startsWith('EA')) {
                             fontColor = '#000fff';
+                        } else if (row.Manobra.startsWith('DS')) {
+                            fontColor = '#ff0000';
                         }
 
                         return (
