@@ -32,6 +32,6 @@ export default async (request, response) => {
         row.Manobra = x.join(' ');
     }
 
-    response.setHeader('Cache-Control', 's-maxage=120, stale-while-revalidate');
+    response.setHeader('Cache-Control', 's-maxage=60, stale-while-revalidate');
     response.status(200).json(table);
 }
