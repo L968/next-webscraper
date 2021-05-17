@@ -2,6 +2,7 @@
     border-collapse: 'collapse';
     width: 100%;
     margin-bottom: 30px;
+    border: 1px solid #000;
 }
 
 .first_header {
@@ -20,13 +21,13 @@
 }
 
 .table thead th {
-    border: 0.5px solid #dddddd;
+    border: 0.5px solid #000;
 }
 
 .table tbody td {
     font-size: 11px;
     font-family: Arial, Helvetica, sans-serif;
-    border: 0.5px solid #dddddd;
+    border: 0.5px solid #000;
 }
 
 .table tbody tr:hover {
@@ -42,5 +43,5 @@
 }
 
 .blue {
-    background-color: #00BFFF;
+    background-color: #64f789;
 }

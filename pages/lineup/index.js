@@ -45,6 +45,19 @@ export default function Lineup() {
                             className = styles.blue;
                         }
 
+                        if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
+                            row.Mercadoria = 'DAP';
+                        }
+
+                        var texto = row.Previsto.split(' ');
+                        var posicaoVirgula = texto[0].indexOf(',');
+                        texto[0] = texto[0].slice(0, posicaoVirgula);
+                        row.Previsto = texto.join(' ');
+
+                        texto = row.Saldo.split(' ');
+                        posicaoVirgula = texto[0].indexOf(',');
+                        texto[0] = texto[0].slice(0, posicaoVirgula);
+                        row.Saldo = texto.join(' ');
                         return (
                             <tr className={className}>
                                 <td>{row.Berço}</td>
@@ -79,12 +92,20 @@ export default function Lineup() {
                 <tbody>
                     {data[1].map(row => {
                         let className = styles.gray;
+                        if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
+                            row.Mercadoria = 'DAP';
+                        }
 
                         if (row.Mercadoria.toUpperCase() === 'SOJA' || row.Mercadoria.toUpperCase() === 'FARELO') {
                             className = styles.yellow;
                         } else if (row.Mercadoria.toUpperCase() === 'PASTA') {
                             className = styles.blue;
                         }
+
+                        var texto = row.Previsto.split(' ');
+                        var posicaoVirgula = texto[0].indexOf(',');
+                        texto[0] = texto[0].slice(0, posicaoVirgula);
+                        row.Previsto = texto.join(' ');
 
                         return (
                             <tr className={className}>
@@ -119,12 +140,20 @@ export default function Lineup() {
                 <tbody>
                     {data[2].map(row => {
                         let className = styles.gray;
+                        if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
+                            row.Mercadoria = 'DAP';
+                        }
 
                         if (row.Mercadoria.toUpperCase() === 'SOJA' || row.Mercadoria.toUpperCase() === 'FARELO') {
                             className = styles.yellow;
                         } else if (row.Mercadoria.toUpperCase() === 'PASTA') {
                             className = styles.blue;
                         }
+
+                        var texto = row.Previsto.split(' ');
+                        var posicaoVirgula = texto[0].indexOf(',');
+                        texto[0] = texto[0].slice(0, posicaoVirgula);
+                        row.Previsto = texto.join(' ');
 
                         return (
                             <tr className={className}>
@@ -159,12 +188,20 @@ export default function Lineup() {
                 <tbody>
                     {data[3].map(row => {
                         let className = styles.gray;
+                        if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
+                            row.Mercadoria = 'DAP';
+                        }
 
                         if (row.Mercadoria.toUpperCase() === 'SOJA' || row.Mercadoria.toUpperCase() === 'FARELO') {
                             className = styles.yellow;
                         } else if (row.Mercadoria.toUpperCase() === 'PASTA') {
                             className = styles.blue;
                         }
+
+                        var texto = row.Previsto.split(' ');
+                        var posicaoVirgula = texto[0].indexOf(',');
+                        texto[0] = texto[0].slice(0, posicaoVirgula);
+                        row.Previsto = texto.join(' ');
 
                         return (
                             <tr className={className}>
