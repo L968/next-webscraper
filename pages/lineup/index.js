@@ -39,24 +39,40 @@ export default function Lineup() {
                     {data[0].map(row => {
                         let className = styles.gray;
 
+                        if (row.Mercadoria.toUpperCase() === 'VEICULOS') {
+                            className = styles.orange;
+                        }
+
                         if (row.Mercadoria.toUpperCase() === 'SOJA' || row.Mercadoria.toUpperCase() === 'FARELO') {
                             className = styles.yellow;
                         } else if (row.Mercadoria.toUpperCase() === 'PASTA') {
-                            className = styles.blue;
+                            className = styles.green;
                         }
 
                         if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
                             row.Mercadoria = 'DAP';
                         }
-
+                        if (row.Mercadoria.toUpperCase() === 'OUTS.ACUCARES') {
+                            row.Mercadoria = 'AÇÚCAR';
+                        }
+                        if (row.Mercadoria.toUpperCase() === 'CONTÊINERES') {
+                            row.Mercadoria = 'CONTAINER';
+                        }
                         var texto = row.Previsto.split(' ');
                         var posicaoVirgula = texto[0].indexOf(',');
-                        texto[0] = texto[0].slice(0, posicaoVirgula);
+
+                        if (posicaoVirgula > -1) {
+                            texto[0] = texto[0].slice(0, posicaoVirgula);
+                        }
+                        
                         row.Previsto = texto.join(' ');
 
                         texto = row.Saldo.split(' ');
                         posicaoVirgula = texto[0].indexOf(',');
-                        texto[0] = texto[0].slice(0, posicaoVirgula);
+                        if (posicaoVirgula > -1) {
+                            texto[0] = texto[0].slice(0, posicaoVirgula);
+                        }
+                        
                         row.Saldo = texto.join(' ');
                         return (
                             <tr className={className}>
@@ -95,16 +111,29 @@ export default function Lineup() {
                         if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
                             row.Mercadoria = 'DAP';
                         }
+                        if (row.Mercadoria.toUpperCase() === 'VEICULOS') {
+                            className = styles.orange;
+                        }
 
                         if (row.Mercadoria.toUpperCase() === 'SOJA' || row.Mercadoria.toUpperCase() === 'FARELO') {
                             className = styles.yellow;
                         } else if (row.Mercadoria.toUpperCase() === 'PASTA') {
                             className = styles.blue;
                         }
+                        if (row.Mercadoria.toUpperCase() === 'OUTS.ACUCARES') {
+                            row.Mercadoria = 'AÇÚCAR';
+                        }
+                        if (row.Mercadoria.toUpperCase() === 'CONTÊINERES') {
+                            row.Mercadoria = 'CONTAINER';
+                        }
 
                         var texto = row.Previsto.split(' ');
                         var posicaoVirgula = texto[0].indexOf(',');
-                        texto[0] = texto[0].slice(0, posicaoVirgula);
+
+                        if (posicaoVirgula > -1) {
+                            texto[0] = texto[0].slice(0, posicaoVirgula);
+                        }
+
                         row.Previsto = texto.join(' ');
 
                         return (
@@ -143,16 +172,29 @@ export default function Lineup() {
                         if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
                             row.Mercadoria = 'DAP';
                         }
+                        if (row.Mercadoria.toUpperCase() === 'VEICULOS') {
+                            className = styles.orange;
+                        }
 
                         if (row.Mercadoria.toUpperCase() === 'SOJA' || row.Mercadoria.toUpperCase() === 'FARELO') {
                             className = styles.yellow;
                         } else if (row.Mercadoria.toUpperCase() === 'PASTA') {
                             className = styles.blue;
                         }
+                        if (row.Mercadoria.toUpperCase() === 'OUTS.ACUCARES') {
+                            row.Mercadoria = 'AÇÚCAR';
+                        }
+                        if (row.Mercadoria.toUpperCase() === 'CONTÊINERES') {
+                            row.Mercadoria = 'CONTAINER';
+                        }
 
                         var texto = row.Previsto.split(' ');
                         var posicaoVirgula = texto[0].indexOf(',');
-                        texto[0] = texto[0].slice(0, posicaoVirgula);
+
+                        if (posicaoVirgula > -1) {
+                            texto[0] = texto[0].slice(0, posicaoVirgula);
+                        }
+
                         row.Previsto = texto.join(' ');
 
                         return (
@@ -188,8 +230,18 @@ export default function Lineup() {
                 <tbody>
                     {data[3].map(row => {
                         let className = styles.gray;
+
+                        if (row.Mercadoria.toUpperCase() === 'VEICULOS') {
+                            className = styles.orange;
+                        }
                         if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
                             row.Mercadoria = 'DAP';
+                        }
+                        if (row.Mercadoria.toUpperCase() === 'OUTS.ACUCARES') {
+                            row.Mercadoria = 'AÇÚCAR';
+                        }
+                        if (row.Mercadoria.toUpperCase() === 'CONTÊINERES') {
+                            row.Mercadoria = 'CONTAINER';
                         }
 
                         if (row.Mercadoria.toUpperCase() === 'SOJA' || row.Mercadoria.toUpperCase() === 'FARELO') {
@@ -200,7 +252,11 @@ export default function Lineup() {
 
                         var texto = row.Previsto.split(' ');
                         var posicaoVirgula = texto[0].indexOf(',');
-                        texto[0] = texto[0].slice(0, posicaoVirgula);
+
+                        if (posicaoVirgula > -1) {
+                            texto[0] = texto[0].slice(0, posicaoVirgula);
+                        }
+
                         row.Previsto = texto.join(' ');
 
                         return (
