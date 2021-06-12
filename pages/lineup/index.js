@@ -25,7 +25,7 @@ export default function Lineup() {
                         <th colSpan='8'>ATRACADOS</th>
                     </tr>
                     <tr>
-                        <th>Berço T</th>
+                        <th>Berço</th>
                         <th>Embarcação</th>
                         <th>Operador</th>
                         <th>Mercadoria</th>
@@ -39,14 +39,16 @@ export default function Lineup() {
                     {data[0].map(row => {
                         let className = styles.gray;
 
-                        if (row.Mercadoria.toUpperCase() === 'VEICULOS') {
+                        if (row.Mercadoria.toUpperCase() === 'VEICULOS' || row.Mercadoria.toUpperCase() === 'AUTOMOVEIS') {
                             className = styles.orange;
                         }
 
                         if (row.Mercadoria.toUpperCase() === 'SOJA' || row.Mercadoria.toUpperCase() === 'FARELO') {
                             className = styles.yellow;
-                        } else if (row.Mercadoria.toUpperCase() === 'PASTA') {
-                            className = styles.green;
+                        } 
+
+                        if (row.Mercadoria.toUpperCase() === 'PASTA') {
+                            className = styles.blue;
                         }
 
                         if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
@@ -58,6 +60,11 @@ export default function Lineup() {
                         if (row.Mercadoria.toUpperCase() === 'CONTÊINERES') {
                             row.Mercadoria = 'CONTAINER';
                         }
+
+                        if (row.Mercadoria.toUpperCase() === 'CONTAINER') {
+                            className = styles.pink;
+                        } 
+
                         var texto = row.Previsto.split(' ');
                         var posicaoVirgula = texto[0].indexOf(',');
 
@@ -111,13 +118,15 @@ export default function Lineup() {
                         if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
                             row.Mercadoria = 'DAP';
                         }
-                        if (row.Mercadoria.toUpperCase() === 'VEICULOS') {
+                        if (row.Mercadoria.toUpperCase() === 'VEICULOS' || row.Mercadoria.toUpperCase() === 'AUTOMOVEIS') {
                             className = styles.orange;
                         }
 
                         if (row.Mercadoria.toUpperCase() === 'SOJA' || row.Mercadoria.toUpperCase() === 'FARELO') {
                             className = styles.yellow;
-                        } else if (row.Mercadoria.toUpperCase() === 'PASTA') {
+                        }
+
+                        if (row.Mercadoria.toUpperCase() === 'PASTA') {
                             className = styles.blue;
                         }
                         if (row.Mercadoria.toUpperCase() === 'OUTS.ACUCARES') {
@@ -126,6 +135,9 @@ export default function Lineup() {
                         if (row.Mercadoria.toUpperCase() === 'CONTÊINERES') {
                             row.Mercadoria = 'CONTAINER';
                         }
+                        if (row.Mercadoria.toUpperCase() === 'CONTAINER') {
+                            className = styles.pink;
+                        } 
 
                         var texto = row.Previsto.split(' ');
                         var posicaoVirgula = texto[0].indexOf(',');
@@ -172,21 +184,26 @@ export default function Lineup() {
                         if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
                             row.Mercadoria = 'DAP';
                         }
-                        if (row.Mercadoria.toUpperCase() === 'VEICULOS') {
+                        if (row.Mercadoria.toUpperCase() === 'VEICULOS' || row.Mercadoria.toUpperCase() === 'AUTOMOVEIS') {
                             className = styles.orange;
                         }
 
                         if (row.Mercadoria.toUpperCase() === 'SOJA' || row.Mercadoria.toUpperCase() === 'FARELO') {
                             className = styles.yellow;
-                        } else if (row.Mercadoria.toUpperCase() === 'PASTA') {
+                        } 
+                        if (row.Mercadoria.toUpperCase() === 'PASTA') {
                             className = styles.blue;
                         }
+                        
                         if (row.Mercadoria.toUpperCase() === 'OUTS.ACUCARES') {
                             row.Mercadoria = 'AÇÚCAR';
                         }
                         if (row.Mercadoria.toUpperCase() === 'CONTÊINERES') {
                             row.Mercadoria = 'CONTAINER';
                         }
+                        if (row.Mercadoria.toUpperCase() === 'CONTAINER') {
+                            className = styles.pink;
+                        } 
 
                         var texto = row.Previsto.split(' ');
                         var posicaoVirgula = texto[0].indexOf(',');
@@ -231,7 +248,7 @@ export default function Lineup() {
                     {data[3].map(row => {
                         let className = styles.gray;
 
-                        if (row.Mercadoria.toUpperCase() === 'VEICULOS') {
+                        if (row.Mercadoria.toUpperCase() === 'VEICULOS' || row.Mercadoria.toUpperCase() === 'AUTOMOVEIS') {
                             className = styles.orange;
                         }
                         if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
@@ -243,10 +260,15 @@ export default function Lineup() {
                         if (row.Mercadoria.toUpperCase() === 'CONTÊINERES') {
                             row.Mercadoria = 'CONTAINER';
                         }
+                        
+                        if (row.Mercadoria.toUpperCase() === 'CONTAINER') {
+                            className = styles.pink;
+                        } 
 
                         if (row.Mercadoria.toUpperCase() === 'SOJA' || row.Mercadoria.toUpperCase() === 'FARELO') {
                             className = styles.yellow;
-                        } else if (row.Mercadoria.toUpperCase() === 'PASTA') {
+                        } 
+                        if (row.Mercadoria.toUpperCase() === 'PASTA') {
                             className = styles.blue;
                         }
 
