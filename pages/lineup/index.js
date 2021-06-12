@@ -25,7 +25,7 @@ export default function Lineup() {
                         <th colSpan='8'>ATRACADOS</th>
                     </tr>
                     <tr>
-                        <th>Berço TESTE</th>
+                        <th>Berço</th>
                         <th>Embarcação</th>
                         <th>Operador</th>
                         <th>Mercadoria</th>
