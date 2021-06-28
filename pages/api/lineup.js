@@ -4,16 +4,18 @@ export default async (request, response) => {
     const tables = await tabletojson.convertUrl('http://www.appaweb.appa.pr.gov.br/appaweb/pesquisa.aspx?WCI=relEmitirLineUp');
     let atracados = tables[1];
     let programados = tables[2];
-    let aoLargo = tables[3];
-    let esperados = tables[4];
+    let aoLargoatracacao = tables[3];
+    let aoLargo = tables[4];
+    let esperados = tables[5];
 
     atracados = filterTable(atracados);
     programados = filterTable(programados);
+    aoLargoatracacao = filterTable(aoLargoatracacao);
     aoLargo = filterTable(aoLargo);
     esperados = filterTable(esperados);
 
     response.setHeader('Cache-Control', 's-maxage=60, stale-while-revalidate');
-    response.status(200).json([atracados, programados, aoLargo, esperados]);
+    response.status(200).json([atracados, programados, aoLargoatracacao, aoLargo, esperados]);
 }
 
 function filterTable(table) {
