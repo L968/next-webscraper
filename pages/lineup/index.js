@@ -47,7 +47,7 @@ export default function Lineup() {
                             className = styles.yellow;
                         } 
 
-                        if (row.Mercadoria.toUpperCase() === 'PASTA') {
+                        if (row.Mercadoria.toUpperCase() === 'PASTA' || row.Mercadoria.toUpperCase() === 'CELULOSE') {
                             className = styles.blue;
                         }
 
@@ -126,7 +126,7 @@ export default function Lineup() {
                             className = styles.yellow;
                         }
 
-                        if (row.Mercadoria.toUpperCase() === 'PASTA') {
+                        if (row.Mercadoria.toUpperCase() === 'PASTA' || row.Mercadoria.toUpperCase() === 'CELULOSE') {
                             className = styles.blue;
                         }
                         if (row.Mercadoria.toUpperCase() === 'OUTS.ACUCARES') {
@@ -203,7 +203,7 @@ export default function Lineup() {
                         if (row.Mercadoria.toUpperCase() === 'SOJA' || row.Mercadoria.toUpperCase() === 'FARELO') {
                             className = styles.yellow;
                         } 
-                        if (row.Mercadoria.toUpperCase() === 'PASTA') {
+                        if (row.Mercadoria.toUpperCase() === 'PASTA' || row.Mercadoria.toUpperCase() === 'CELULOSE') {
                             className = styles.blue;
                         }
 
@@ -230,7 +230,9 @@ export default function Lineup() {
                         );
                     })}
                 </tbody>
+                
             </table>
+
             <table cellPadding='10' cellSpacing='0' className={styles.table}>
                 <thead>
                     <tr className={styles.first_header}>
@@ -259,7 +261,7 @@ export default function Lineup() {
                         if (row.Mercadoria.toUpperCase() === 'SOJA' || row.Mercadoria.toUpperCase() === 'FARELO') {
                             className = styles.yellow;
                         } 
-                        if (row.Mercadoria.toUpperCase() === 'PASTA') {
+                        if (row.Mercadoria.toUpperCase() === 'PASTA' || row.Mercadoria.toUpperCase() === 'CELULOSE') {
                             className = styles.blue;
                         }
                         
@@ -336,7 +338,7 @@ export default function Lineup() {
                         if (row.Mercadoria.toUpperCase() === 'SOJA' || row.Mercadoria.toUpperCase() === 'FARELO') {
                             className = styles.yellow;
                         } 
-                        if (row.Mercadoria.toUpperCase() === 'PASTA') {
+                        if (row.Mercadoria.toUpperCase() === 'PASTA' || row.Mercadoria.toUpperCase() === 'CELULOSE') {
                             className = styles.blue;
                         }
 
