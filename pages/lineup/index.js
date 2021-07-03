@@ -26,11 +26,11 @@ export default function Lineup() {
                     </tr>
                     <tr>
                         <th>Berço</th>
-                        <th>Embarcação</th>
+                        <th>Nome</th>
                         <th>Operador</th>
                         <th>Mercadoria</th>
                         <th>Atracação</th>
-                        <th>ETS</th>
+                        <th>Saida</th>
                         <th>Previsto</th>
                         <th>Saldo</th>
                     </tr>
@@ -104,11 +104,11 @@ export default function Lineup() {
                     </tr>
                     <tr>
                         <th>Berço</th>
-                        <th>Embarcação</th>
+                        <th>Nome</th>
                         <th>Operador</th>
                         <th>Mercadoria</th>
-                        <th>ETB</th>
-                        <th>ETS</th>
+                        <th>Atraca</th>
+                        <th>Saida</th>
                         <th>Previsto</th>
                     </tr>
                 </thead>
@@ -170,11 +170,11 @@ export default function Lineup() {
                     </tr>
                     <tr>
                         <th>Berço</th>
-                        <th>Embarcação</th>
+                        <th>Nome</th>
                         <th>Operador</th>
                         <th>Mercadoria</th>
-                        <th>Atracacao</th>
-                        <th>ETS</th>
+                        <th>Atraca</th>
+                        <th>Saida</th>
                         <th>Previsto</th>
                         <th>Saldo</th>
                     </tr>
@@ -240,11 +240,11 @@ export default function Lineup() {
                     </tr>
                     <tr>
                         <th>Berço</th>
-                        <th>Embarcação</th>
+                        <th>Nome</th>
                         <th>Operador</th>
                         <th>Mercadoria</th>
-                        <th>ETA</th>
-                        <th>ETS</th>
+                        <th>Atraca</th>
+                        <th>Saida</th>
                         <th>Previsto</th>
                     </tr>
                 </thead>
@@ -306,11 +306,11 @@ export default function Lineup() {
                     </tr>
                     <tr>
                         <th>Berço</th>
-                        <th>Embarcação</th>
+                        <th>Nome</th>
                         <th>Operador</th>
                         <th>Mercadoria</th>
-                        <th>ETA</th>
-                        <th>ETS</th>
+                        <th>Atraca</th>
+                        <th>Saida</th>
                         <th>Previsto</th>
                     </tr>
                 </thead>
