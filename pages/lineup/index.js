@@ -39,7 +39,7 @@ export default function Lineup() {
                     {data[0].map(row => {
                         let className = styles.gray;
 
-                        if (row.Mercadoria.toUpperCase() === 'VEICULOS' || row.Mercadoria.toUpperCase() === 'AUTOMOVEIS') {
+                        if (row.Mercadoria.toUpperCase() === 'VEICULOS' || row.Mercadoria.toUpperCase() === 'AUTOMOVEIS' || row.Mercadoria.toUpperCase() === 'PÁ CARREG') {
                             className = styles.orange;
                         }
 
@@ -50,7 +50,9 @@ export default function Lineup() {
                         if (row.Mercadoria.toUpperCase() === 'PASTA' || row.Mercadoria.toUpperCase() === 'CELULOSE') {
                             className = styles.blue;
                         }
-
+                        if (row.Mercadoria.toUpperCase() === 'OUTS.CARREGADORAS/PAS-CARREGAD') {
+                            row.Mercadoria = 'PÁ CARREG';
+                        }
                         if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
                             row.Mercadoria = 'DAP';
                         }
@@ -118,7 +120,10 @@ export default function Lineup() {
                         if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
                             row.Mercadoria = 'DAP';
                         }
-                        if (row.Mercadoria.toUpperCase() === 'VEICULOS' || row.Mercadoria.toUpperCase() === 'AUTOMOVEIS') {
+                        if (row.Mercadoria.toUpperCase() === 'OUTS.CARREGADORAS/PAS-CARREGAD') {
+                            row.Mercadoria = 'PÁ CARREG';
+                        }
+                        if (row.Mercadoria.toUpperCase() === 'VEICULOS' || row.Mercadoria.toUpperCase() === 'AUTOMOVEIS' || row.Mercadoria.toUpperCase() === 'PÁ CARREG') {
                             className = styles.orange;
                         }
 
@@ -183,11 +188,14 @@ export default function Lineup() {
                     {data[2].map(row => {
                         let className = styles.gray;
 
-                        if (row.Mercadoria.toUpperCase() === 'VEICULOS' || row.Mercadoria.toUpperCase() === 'AUTOMOVEIS') {
+                        if (row.Mercadoria.toUpperCase() === 'VEICULOS' || row.Mercadoria.toUpperCase() === 'AUTOMOVEIS' || row.Mercadoria.toUpperCase() === 'PÁ CARREG') {
                             className = styles.orange;
                         }
                         if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
                             row.Mercadoria = 'DAP';
+                        }
+                        if (row.Mercadoria.toUpperCase() === 'OUTS.CARREGADORAS/PAS-CARREGAD') {
+                            row.Mercadoria = 'PÁ CARREG';
                         }
                         if (row.Mercadoria.toUpperCase() === 'OUTS.ACUCARES') {
                             row.Mercadoria = 'AÇÚCAR';
@@ -254,7 +262,10 @@ export default function Lineup() {
                         if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
                             row.Mercadoria = 'DAP';
                         }
-                        if (row.Mercadoria.toUpperCase() === 'VEICULOS' || row.Mercadoria.toUpperCase() === 'AUTOMOVEIS') {
+                        if (row.Mercadoria.toUpperCase() === 'OUTS.CARREGADORAS/PAS-CARREGAD') {
+                            row.Mercadoria = 'PÁ CARREG';
+                        }
+                        if (row.Mercadoria.toUpperCase() === 'VEICULOS' || row.Mercadoria.toUpperCase() === 'AUTOMOVEIS' || row.Mercadoria.toUpperCase() === 'PÁ CARREG') {
                             className = styles.orange;
                         }
 
@@ -318,11 +329,14 @@ export default function Lineup() {
                     {data[4].map(row => {
                         let className = styles.gray;
 
-                        if (row.Mercadoria.toUpperCase() === 'VEICULOS' || row.Mercadoria.toUpperCase() === 'AUTOMOVEIS') {
+                        if (row.Mercadoria.toUpperCase() === 'VEICULOS' || row.Mercadoria.toUpperCase() === 'AUTOMOVEIS' || row.Mercadoria.toUpperCase() === 'PÁ CARREG') {
                             className = styles.orange;
                         }
                         if (row.Mercadoria.toUpperCase() === 'FERTILIZ.MINER.QUIM.C/NITROGEN') {
                             row.Mercadoria = 'DAP';
+                        }
+                        if (row.Mercadoria.toUpperCase() === 'OUTS.CARREGADORAS/PAS-CARREGAD') {
+                            row.Mercadoria = 'PÁ CARREG';
                         }
                         if (row.Mercadoria.toUpperCase() === 'OUTS.ACUCARES') {
                             row.Mercadoria = 'AÇÚCAR';
